@@ -96,9 +96,9 @@ public class Hardware_ReverseOreos
         leftBack  = hwMap.get(DcMotor.class, "leftBack");
         rightBack = hwMap.get(DcMotor.class, "rightBack");
 
-        lift = hwMap.get(DcMotor.class, "lift");
+        //lift = hwMap.get(DcMotor.class, "lift");
 
-        claw = hwMap.get(CRServo.class,"claw");
+       // claw = hwMap.get(CRServo.class,"claw");
 
 
         leftFront.setDirection(DcMotor.Direction.FORWARD);

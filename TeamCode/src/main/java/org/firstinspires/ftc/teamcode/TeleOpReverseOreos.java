@@ -50,27 +50,27 @@ public class TeleOpReverseOreos extends LinearOpMode {
             else if (gamepad1.left_stick_x == 0)
                 robot.goRight(0);
 
-            //use trigger to lift
-            if (gamepad1.left_trigger > 0)
-                robot.lift.setPower(gamepad1.left_trigger); // lift up
-            else if (gamepad1.right_trigger > 0)
-                robot.lift.setPower(-1 * gamepad1.right_trigger); // lift down
-            else
-                robot.lift.setPower(0);
+//            //use trigger to lift
+//            if (gamepad1.left_trigger > 0)
+//                robot.lift.setPower(gamepad1.left_trigger); // lift up
+//            else if (gamepad1.right_trigger > 0)
+//                robot.lift.setPower(-1 * gamepad1.right_trigger); // lift down
+//            else
+//                robot.lift.setPower(0);
 
-           // use right & left bumper to open/close claw
-            if (gamepad1.right_bumper){
-                robot.claw.setPower(1);
-            }
-            else if (gamepad1.left_bumper){
-                robot.claw.setPower(-1);
-            }
-            else {
-                robot.claw.setPower(1);
-            }
-            if(gamepad1.a){
-                robot.claw.setPower(-1);
-            }
+//           // use right & left bumper to open/close claw
+//            if (gamepad1.right_bumper){
+//                robot.claw.setPower(1);
+//            }
+//            else if (gamepad1.left_bumper){
+//                robot.claw.setPower(-1);
+//            }
+//            else {
+//                robot.claw.setPower(1);
+//            }
+//            if(gamepad1.a){
+//                robot.claw.setPower(-1);
+           // }
             // Send telemetry message to signify robot running;
             // telemetry.addData("claw",  "Offset = %.2f", clawOffset);
             // telemetry.addData("left",  "%.2f", left);
